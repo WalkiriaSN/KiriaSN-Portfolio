@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+}
+
+h1 {
+    font-family: 'Crimson Text', sans-serif;
+}
+
+p {
+    font-family: 'oxygen', sans-serif;
+}
+
+.landing {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+.glow-aura {
+    text-align: center;
+    padding: 100px;
+    background-color: rgba(201, 216, 238, 0.8);
+    color: #353535;
+    border-radius: 50%; 
+    box-shadow: 0 0 200px 100px rgba(255, 255, 255, 0.3); 
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 200px 100px rgba(209, 206, 236, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 400px 200px rgba(201, 216, 238, 0.8);
+    }
+    100% {
+        box-shadow: 0 0 200px 100px rgba(218, 237, 231, 0.5);
+    }
+}
+
+.glow-aura:hover {
+    animation: glow 1s infinite;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
