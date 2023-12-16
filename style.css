@@ -15,16 +15,18 @@ header {
     color: #353535;
     text-align: center;
     padding: 40px;
-    font-family: 'Crimson Text', sans-serif;
 }
 
+h1 {
+    font-family: 'Crimson Text', sans-serif;
+    color: #353535;
+}
 
 .container {
     display: flex;
     flex-wrap: wrap;
     background-color: rgba(243, 243, 243, 0.3);
 }
-
 
 .sidebar {
     flex: 0 0 200px;
@@ -60,7 +62,39 @@ header {
 
 }
 
+.date {
+    color: #9ca6d1;
+    font-weight: bolder;
+}
 
+.pname {
+    font-weight: bolder;
+}
+
+.p1 {
+    font-family: 'oxygen' sans-serif;
+}
+
+/*LINKS*/
+a {
+    color: #353535;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #353535;
+}
+
+a:hover {
+    color: #9ca6d1;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #353535;
+}
+
+/*FOOTER*/
 footer {
     background-color: rgba(243, 243, 243, 0.4);
     color: #353535;

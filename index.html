@@ -4,44 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kiria S.N Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&family=Oxygen:wght@300&display=swap"
         rel="stylesheet">
+    <title>Kiria S.N Portfolio</title>
 </head>
 
 <body>
     <!--might move header into article tag within aside div-->
     <header>
         <h1>Kiria S.N</h1>
-        <p>Full Stack Developer</p>
+        <p class="p1">
+        <h4>Full Stack Developer</h4>
+        </p>
     </header>
 
     <div class="container">
         <aside class="sidebar">
             <ul>
-                <li><a href="#info">Info</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html" onclick="loadContent('content')">I N F O</a></li>
+                <li><a href="projects.html" onclick="loadContent('projects')">P R O J E C T S</a></li>
+                <li><a href="contact.html" onclick="loadContent('contact')">C O N T A C T</a></li>
             </ul>
         </aside>
-        <main class="content">
-            <section id="info">
-                <p>Junior full stack developer with a focus on frontend. Experienced in HTML, CSS, foundational JS,
-                    Typescript, Angular and Nodejs.</p>
-            </section>
-            <section id="projects">
-                <p>
-                    Mobile and Web projects, using angular, nodejs...
-                </p>
-            </section>
-            <section id="contact">
-                <p>
-                    Links to socials, resume and linkedIn
-                </p>
-            </section>
+        <main class="content" id="mainContent">
+            <p>Junior full stack developer with a focus on frontend. Experienced in HTML, CSS, foundational JS,
+                Typescript, Angular and Nodejs.</p>
         </main>
     </div>
 
